@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todo Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- App Container -->
+  <div class="app-container">
+    <h1>📋 Todo Manager</h1>
+
+    <!-- Input Area -->
+    <div class="input-area">
+      <input type="text" id="input" placeholder="Enter your todo...">
+      <button class="add-btn">Add</button>
+    </div>
+
+    <!-- Todo List -->
+    <div class="todos">
+      <ol class="todo-list"></ol>
+    </div>
+  </div>
+
+  <!-- Popup Overlay -->
+  <div class="popup-overlay hidden">
+    <div class="popup-box">
+      <button class="close-btn" title="Close">❌</button>
+      <button class="delete-btn" title="Delete Todo">🗑Delete</button>
+      <h2>Edit Your Todo</h2>
+      <input type="text" class="popup-input" placeholder="Edit todo here...">
+      <button class="update-btn">✒Update</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
